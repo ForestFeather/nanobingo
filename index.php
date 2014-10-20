@@ -152,7 +152,7 @@ foreach($ListItems as $category => $items) {
     </div>
 
     <div class="footer l-box is-center">
-        <p>Made by Collin 'Ridayah' O'Connor with help from Alexandra 'Chomskyrabbit' McGowan. &copy; 2014.  Questions, comments?  Contact <a href='mailto:webmaster@feather-mage.com'>Webmaster</a></p>
+        <p>Made by Collin 'Ridayah' O'Connor with help from Alexandra 'Chomskyrabbit' McGowan. &copy; 2014.  Questions, comments?  Contact <a href='mailto:webmaster_IfItsBetweenAndIncludesUnderscoresItsGone__@feather-mage.com'>Webmaster</a></p>
     </div>
 </div>
 </body>
