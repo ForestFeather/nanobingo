@@ -1,0 +1,9 @@
+Improve randomness to minimize (but not eradicate) duplicates.
+Make bingo card quare
+Print to PDF with just bingo card
+Sort lists by lowest number of child items to highest before putting into listing
+Maybe move checkboxes for category selection to first column/category
+Auto-link shortener?
+Click for full 'random' of lists/seed regen
+On blank, generate full random card with all lists by default
+
