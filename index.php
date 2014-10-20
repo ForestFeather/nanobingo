@@ -74,7 +74,7 @@ for ( $i = 25; $i >= 0; $i--)
     $badValue = true;
     do {
         $j = @mt_rand(0, $num_items);
-        
+
         if( !in_array($j, $usedNums)) {
             $badValue = false;
             array_push($usedNums, $j);
@@ -83,7 +83,7 @@ for ( $i = 25; $i >= 0; $i--)
         }
 
     } while ( $badValue && $counter < 4 );
-    
+
     $bingoItems[$i] = $items[$j];
 }
 
@@ -93,12 +93,12 @@ for( $i = 0; $i < 5; $i++ ) {   echo "<th width='20%' class='is-center'>" . $bin
 echo "</tr></thead>";
 echo "<tbody>";
 for( $i = 0; $i < 5; $i++ ) {
-echo "<tr>";
-for( $j = 0; $j < 5; $j++ ) {
-    echo "<td>" . $bingoItems[($i*5) + $j] . "</td>";
-    // echo "<td>SAMPLE CONTENT</td>";
-}
-echo "</tr>";
+    echo "<tr>";
+    for( $j = 0; $j < 5; $j++ ) {
+        echo "<td>" . $bingoItems[($i*5) + $j] . "</td>";
+        // echo "<td>SAMPLE CONTENT</td>";
+    }
+    echo "</tr>";
 }
 echo "</tbody>";
 ?>
@@ -130,17 +130,17 @@ echo "</tbody>";
         <div class="pure-g">
 <?
 foreach($ListItems as $category => $items) {
-echo "<div class='pure-u-1 pure-u-md-1-3 pure-u-lg-1-5'>";
-echo "<div class='l-box'><h3 class='content-head-ribbon'>".$category."</h3>";
-//echo "<label for='".$category$."'>";
-echo "<input type='checkbox' name='".$category."' id='".$category."' ";
-echo isset($_GET[$category]) ? 'checked' : '';
-echo ">";
-//echo "</label>";
-echo "<ul>";
-foreach($items as $item) { echo "<li>".$item."</li>"; }
-echo "</ul>";
-echo "</div></div>";
+    echo "<div class='pure-u-1 pure-u-md-1-3 pure-u-lg-1-5'>";
+    echo "<div class='l-box'><h3 class='content-head-ribbon'>".$category."</h3>";
+    //echo "<label for='".$category$."'>";
+    echo "<input type='checkbox' name='".$category."' id='".$category."' ";
+    echo isset($_GET[$category]) ? 'checked' : '';
+    echo ">";
+    //echo "</label>";
+    echo "<ul>";
+    foreach($items as $item) { echo "<li>".$item."</li>"; }
+    echo "</ul>";
+    echo "</div></div>";
 }
 
 ?>
