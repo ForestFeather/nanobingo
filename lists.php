@@ -63,7 +63,7 @@ $ListItems = Array(
         'Write in excess of your daily requirement for 2 days',
         'Write in excess of your daily requirement for 5 days',
         'Write 25k in a single week',
-        'Write 1,000 words in every room of your domocile'),
+        'Write 1,000 words in every room of your domicile'),
     "Subject" => Array(
         'Insert the Shovel of Death into your novel',
         'Insert a Wrimo as a character of any importance',
