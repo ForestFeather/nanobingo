@@ -1,4 +1,4 @@
-Improve randomness to minimize (but not eradicate) duplicates.
++Improve randomness to minimize (but not eradicate) duplicates.
 Make bingo card quare
 Print to PDF with just bingo card
 Sort lists by lowest number of child items to highest before putting into listing
