@@ -129,7 +129,19 @@ echo "</tbody>";
         <input id='seed' name='seed' type='text' placeholder='Seed Value' value='<?php echo (isset($_GET['seed']) ? $_GET['seed'] : mt_rand()); ?>'>
         <div class="pure-g">
 <?
-foreach($ListItems as $category => $items) {
+$sortedListIndex = Array();
+foreach($ListItems as $key => $value) {
+    $sortedListIndex[$key] = count($value);
+}
+
+asort($sortedListIndex);
+$sortedListItems = Array();
+foreach($sortedListIndex as $key => $value) {
+    $sortedListItems[$key] = $ListItems[$key];
+}
+
+
+foreach($sortedListItems as $category => $items) {
     echo "<div class='pure-u-1 pure-u-md-1-3 pure-u-lg-1-5'>";
     echo "<div class='l-box'><h3 class='content-head-ribbon'>".$category."</h3>";
     //echo "<label for='".$category$."'>";
