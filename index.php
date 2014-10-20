@@ -65,10 +65,25 @@ foreach($ListItems as $key => $value) {
 
 // Randomize it
 $bingoItems = Array();
+$usedNums = Array();
 $num_items = count($items) - 1;
 for ( $i = 25; $i >= 0; $i--)
 {
-    $j = @mt_rand(0, $num_items);
+    $j = 0;
+    $counter = 0;
+    $badValue = true;
+    do {
+        $j = @mt_rand(0, $num_items);
+        
+        if( !in_array($j, $usedNums)) {
+            $badValue = false;
+            array_push($usedNums, $j);
+        } else {
+            $counter++;
+        }
+
+    } while ( $badValue && $counter < 4 );
+    
     $bingoItems[$i] = $items[$j];
 }
 
