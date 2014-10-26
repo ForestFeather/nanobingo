@@ -126,7 +126,7 @@ echo "</tbody>";
         </p>
         <form class='pure-form' action='index.php' method="get"><fieldset>
         <div class="pure-g">
-            <div class='pure-u-1 pure-u-md-1-3 pure-u-lg-1-5'>
+            <div class='pure-u-1 pure-u-md-1-2 pure-u-lg-1-4'>
                 <div class='l-box'>
                 <h3 class='content-head-ribbon'>Settings</h3>
                 <label class='content-head-ribbon' for='seed'>Seed</label>
@@ -156,7 +156,7 @@ foreach($sortedListIndex as $key => $value) {
 
 
 foreach($sortedListItems as $category => $items) {
-    echo "<div class='pure-u-1 pure-u-md-1-3 pure-u-lg-1-5'>";
+    echo "<div class='pure-u-1 pure-u-md-1-2 pure-u-lg-1-4'>";
     echo "<div class='l-box'><h3 class='content-head-ribbon'>".$category."</h3>";
     //echo "<label for='".$category$."'>";
     //echo "<input type='checkbox' name='".$category."' id='".$category."' ";
