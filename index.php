@@ -131,6 +131,11 @@ echo "</tbody>";
                 <h3 class='content-head-ribbon'>Settings</h3>
                 <label class='content-head-ribbon' for='seed'>Seed</label>
                 <input id='seed' name='seed' type='text' placeholder='Seed Value' value='<?php echo (isset($_GET['seed']) ? $_GET['seed'] : mt_rand()); ?>'>
+                <? foreach($ListItems as $key => $value) { 
+                    echo "<input type='checkbox' name='".$key.".'";
+                    echo isset($_GET[$key]) ? 'checked' : '';
+                    echo ">".$key."</input>"; 
+                } ?>
             </div>
 </div>
 <?
@@ -150,9 +155,9 @@ foreach($sortedListItems as $category => $items) {
     echo "<div class='pure-u-1 pure-u-md-1-3 pure-u-lg-1-5'>";
     echo "<div class='l-box'><h3 class='content-head-ribbon'>".$category."</h3>";
     //echo "<label for='".$category$."'>";
-    echo "<input type='checkbox' name='".$category."' id='".$category."' ";
-    echo isset($_GET[$category]) ? 'checked' : '';
-    echo ">";
+    //echo "<input type='checkbox' name='".$category."' id='".$category."' ";
+    //echo isset($_GET[$category]) ? 'checked' : '';
+    //echo ">";
     //echo "</label>";
     echo "<ul>";
     foreach($items as $item) { echo "<li>".$item."</li>"; }
