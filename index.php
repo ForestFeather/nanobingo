@@ -132,6 +132,7 @@ echo "</tbody>";
                 <label class='content-head-ribbon' for='seed'>Seed</label>
                 <input id='seed' name='seed' type='text' placeholder='Seed Value' value='<?php echo (isset($_GET['seed']) ? $_GET['seed'] : mt_rand()); ?>'>
                 <div class='l-box'>
+                <h4 class='content-head-ribbon'>Include:</h4>
                 <? foreach($ListItems as $key => $value) { 
                     echo "<label class='pure-checkbox content-head-ribbon' for='".$key."'>";
                     echo "<input type='checkbox'id='".$key."' name='".$key.".'";
