@@ -44,7 +44,7 @@
 
 <div class="content-wrapper">
     <div class="content">
-        <h2 class="content-head is-center">Your Bingo Card</h2>
+        <h2 id="Card" class="content-head is-center">Your Bingo Card</h2>
 
         <div class="pure-g">
             <div class="l-box pure-u-1">
@@ -128,7 +128,7 @@ echo "</tbody>";
     </div>-->
     <div class="pure-u-1">
 
-        <h2 class="content-head content-head-ribbon">Bingo Card Categories</h2>
+        <h2 id="Settings" class="content-head content-head-ribbon">Bingo Card Categories</h2>
 
         <p>
             You may select your bingo card challenge groups right here.  Make it as hard (or as simple) as you want.
