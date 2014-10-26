@@ -1,4 +1,4 @@
-no-print, no-print * {
+.no-print, .no-print * {
     display: none !important;
 }
 
@@ -6,4 +6,8 @@ no-print, no-print * {
     width: 100%;
     margin: 0;
     float: none;
+}
+
+body {
+    font-size: small;
 }
