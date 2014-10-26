@@ -141,7 +141,7 @@ echo "</tbody>";
                 <h4 class='content-head-ribbon'>Include:</h4>
                 <? foreach($ListItems as $key => $value) { 
                     echo "<label class='pure-checkbox content-head-ribbon' for='".$key."'>";
-                    echo "<input type='checkbox'id='".$key."' name='".$key.".'";
+                    echo "<input type='checkbox' id='".$key."' name='".$key."'";
                     echo ( isset($_GET[$key]) || $pregen ) ? 'checked' : '';
                     echo "> ".$key."</label>"; 
                 } ?>
