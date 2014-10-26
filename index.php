@@ -17,12 +17,13 @@
   <![endif]-->
   <!--[if gt IE 8]><!-->
     <link rel="stylesheet" href="css/layouts/marketing.css">
+    <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
   <!--<![endif]-->
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 </head>
 <body>
 <div class="header no-print">
-    <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
+    <div class="no-print home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
         <a class="pure-menu-heading" href="">Nano Bingo</a>
         <ul>
             <li class="pure-menu-selected"><a href="#">Home</a></li>
