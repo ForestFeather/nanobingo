@@ -118,7 +118,7 @@ echo "</tbody>";
             <div class="pure-u-1 pure-u-lg-1-5">&nbsp;</div>
             </div>
             <p class="is-center">
-                Your Bingo Card is ready to be used.  Simply save this link, or print out this page to use your bingo card for NaNoWriMo.
+                Your Bingo Card is ready to be used.  Simply save this link, or print out this page to use your bingo card for novel writing.
             </p>
         </div>
     </div>
