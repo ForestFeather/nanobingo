@@ -1,0 +1,13 @@
+.no-print, .no-print * {
+    display: none !important;
+}
+
+#content, table {
+    width: 100%;
+    margin: 0;
+    float: none;
+}
+
+body {
+    font-size: small;
+}
