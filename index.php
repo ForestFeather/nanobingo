@@ -140,6 +140,7 @@ echo "</tbody>";
                     echo "> ".$key."</label>"; 
                 } ?>
                 </div>
+                <button type='submit' class='pure-button pure-button-primary'>Generate</button>
             </div>
 </div>
 <?
@@ -158,11 +159,6 @@ foreach($sortedListIndex as $key => $value) {
 foreach($sortedListItems as $category => $items) {
     echo "<div class='pure-u-1 pure-u-md-1-2 pure-u-lg-1-4'>";
     echo "<div class='l-box'><h3 class='content-head-ribbon'>".$category."</h3>";
-    //echo "<label for='".$category$."'>";
-    //echo "<input type='checkbox' name='".$category."' id='".$category."' ";
-    //echo isset($_GET[$category]) ? 'checked' : '';
-    //echo ">";
-    //echo "</label>";
     echo "<ul>";
     foreach($items as $item) { echo "<li>".$item."</li>"; }
     echo "</ul>";
@@ -171,7 +167,6 @@ foreach($sortedListItems as $category => $items) {
 
 ?>
     </div>
-                    <button type='submit' class='pure-button pure-button-primary'>Generate</button>
                 </fieldset>
             </form>
         </div>
