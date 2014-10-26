@@ -135,6 +135,9 @@ echo "</tbody>";
         <p>
             You may select your bingo card challenge groups right here.  Make it as hard (or as simple) as you want.  Clicking 'Generate' will recreate the same card seen on the page now.  Changing the seed without changing selected categories will generate a new card with the same groups as before.  If you wish to save a copy of your bingo card, just 'print' the page!  You will get your bingo card and only your bingo card.
         </p>
+        <p>
+Many thanks to the countless individuals who helped make this possible on the forums, supplying ideas and constantly encouraging us!  Thank you!  List ideas are always welcome, see below to contact us.
+        </p>
         <form class='pure-form' action='index.php' method="get"><fieldset>
         <div class="pure-g">
             <div class='pure-u-1 pure-u-md-1-2 pure-u-lg-1-4'>
