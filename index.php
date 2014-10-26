@@ -105,7 +105,8 @@ echo "<tbody>";
 for( $i = 0; $i < 5; $i++ ) {
     echo "<tr>";
     for( $j = 0; $j < 5; $j++ ) {
-        echo "<td>" . $bingoItems[($i*5) + $j] . "</td>";
+        if ( isset($_GET['free']) && ($i*5 + $j) == 12 ) { echo "<td>FREE TILE</td>"; }
+        else { echo "<td>" . $bingoItems[($i*5) + $j] . "</td>"; }
         // echo "<td>SAMPLE CONTENT</td>";
     }
     echo "</tr>";
@@ -141,6 +142,9 @@ echo "</tbody>";
                 <h3 class='content-head-ribbon'>Settings</h3>
                 <label class='content-head-ribbon' for='seed'>Seed</label>
                 <input id='seed' name='seed' type='text' placeholder='Seed Value' value='<?php echo (isset($_GET['seed']) ? $_GET['seed'] : $seed); ?>'>
+                <label class='pure-checkbox content-head-ribbon' for='free'>
+                <input type='checkbox' id='free' name='free' <? echo isset($_GET['free']) ? 'checked' : '';  ?>>Free Center Tile
+                </label>
                 <div class='l-box'>
                 <h4 class='content-head-ribbon'>Include:</h4>
                 <? foreach($ListItems as $key => $value) { 
