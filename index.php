@@ -52,13 +52,19 @@
 <?
 include('lists.php');
 
-mt_srand();
+$pregen = false;
 if(isset($_GET['seed'])) { mt_srand($_GET['seed']); }
+else { 
+    $pregen = true; 
+    mt_srand();
+    $seed = @mt_rand(0, 9999999);
+    mt_srand($seed);
+}
 
 // Make the bingo items list
 $items = Array();
 foreach($ListItems as $key => $value) {
-    if(isset($_GET[$key])) { $items = array_merge($items, $value); }
+    if(isset($_GET[$key]) || $pregen) { $items = array_merge($items, $value); }
 }
 
 //print_r($items);
@@ -130,13 +136,13 @@ echo "</tbody>";
                 <div class='l-box'>
                 <h3 class='content-head-ribbon'>Settings</h3>
                 <label class='content-head-ribbon' for='seed'>Seed</label>
-                <input id='seed' name='seed' type='text' placeholder='Seed Value' value='<?php echo (isset($_GET['seed']) ? $_GET['seed'] : mt_rand()); ?>'>
+                <input id='seed' name='seed' type='text' placeholder='Seed Value' value='<?php echo (isset($_GET['seed']) ? $_GET['seed'] : $seed); ?>'>
                 <div class='l-box'>
                 <h4 class='content-head-ribbon'>Include:</h4>
                 <? foreach($ListItems as $key => $value) { 
                     echo "<label class='pure-checkbox content-head-ribbon' for='".$key."'>";
                     echo "<input type='checkbox'id='".$key."' name='".$key.".'";
-                    echo isset($_GET[$key]) ? 'checked' : '';
+                    echo ( isset($_GET[$key]) || $pregen ) ? 'checked' : '';
                     echo "> ".$key."</label>"; 
                 } ?>
                 </div>
