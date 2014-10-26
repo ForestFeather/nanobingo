@@ -36,7 +36,7 @@
 
 <div class="splash-container no-print">
     <div class="splash">
-        <h1 class="splash-head">NaNoWriMo Bingo Card Generator</h1>
+        <h1 class="splash-head">Novel Writing Bingo Card Generator</h1>
         <p class="splash-subhead">
             Writing 50,000 words in a month is the main course.  Let's add some spice!
         </p>
