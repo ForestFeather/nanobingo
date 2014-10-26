@@ -26,6 +26,9 @@
         <a class="pure-menu-heading" href="">Nano Bingo</a>
         <ul>
             <li class="pure-menu-selected"><a href="#">Home</a></li>
+            <li class="pure-menu"><a href="#Card">Bingo Card</a></li>
+            <li class="pure-menu"><a href="#Settings">Settings</a></li>
+            <li class="pure-menu"><a href="http://nanowrimo.org/">NaNoWriMo</a></li>
         </ul>
     </div>
 </div>
