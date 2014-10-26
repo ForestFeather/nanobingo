@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 </head>
 <body>
-<div class="header">
+<div class="header no-print">
     <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
         <a class="pure-menu-heading" href="">Nano Bingo</a>
         <ul>
@@ -33,7 +33,7 @@
     </div>
 </div>
 
-<div class="splash-container">
+<div class="splash-container no-print">
     <div class="splash">
         <h1 class="splash-head">NaNoWriMo Bingo Card Generator</h1>
         <p class="splash-subhead">
@@ -122,7 +122,7 @@ echo "</tbody>";
     </div>
 </div>
 
-<div class="ribbon l-box-lrg pure-g">
+<div class="ribbon l-box-lrg pure-g no-print">
     <!--<div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
         <img class="pure-img-responsive" alt="File Icons" width="300" src="img/common/file-icons.png">
     </div>-->
@@ -181,7 +181,7 @@ foreach($sortedListItems as $category => $items) {
         </div>
     </div>
 
-    <div class="footer l-box is-center">
+    <div class="footer l-box is-center no-print">
         <p>Made by Collin 'Ridayah' O'Connor with help from Alexandra 'Chomskyrabbit' McGowan. &copy; 2014.  Questions, comments?  Contact <a href='mailto:webmaster_IfItsBetweenAndIncludesUnderscoresItsGone__@feather-mage.com'>Webmaster</a></p>
     </div>
 </div>
