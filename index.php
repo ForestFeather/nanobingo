@@ -124,7 +124,7 @@ echo "</tbody>";
         <p>
             You may select your bingo card challenge groups right here.  Make it as hard (or as simple) as you want.
         </p>
-        <form class='pure-form' action='index.php' method="get"><fieldset>
+        <form class='pure-form pure-form-aligned' action='index.php' method="get"><fieldset>
         <div class="pure-g">
             <div class='pure-u-1 pure-u-md-1-3 pure-u-lg-1-5'>
                 <div class='l-box'>
@@ -132,9 +132,10 @@ echo "</tbody>";
                 <label class='content-head-ribbon' for='seed'>Seed</label>
                 <input id='seed' name='seed' type='text' placeholder='Seed Value' value='<?php echo (isset($_GET['seed']) ? $_GET['seed'] : mt_rand()); ?>'>
                 <? foreach($ListItems as $key => $value) { 
-                    echo "<input type='checkbox' name='".$key.".'";
+                    echo "<div class='pure-control-group'><label class='pure-checkbox content-head-ribbon' for='".$key."'>";
+                    echo "<input type='checkbox'id='".$key."' name='".$key.".'";
                     echo isset($_GET[$key]) ? 'checked' : '';
-                    echo ">".$key."</input>"; 
+                    echo ">".$key."</label></div>"; 
                 } ?>
             </div>
 </div>
